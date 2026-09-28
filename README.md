@@ -1,25 +1,28 @@
-# USGS Nashville Fall 2026
+# USGS Nashville Fall 2026 Workshop Materials
 
-Materials and examples from the Fall 2026 MATLAB seminar and technical discussions with the USGS Nashville team.
+This repository contains presentation materials, demonstrations, and supporting resources from the Fall 2026 MATLAB workshop delivered to researchers and developers at the U.S. Geological Survey (USGS) Nashville office.
 
 ## Overview
+Modern MATLAB workflows for scientific research, including:
 
-This repository contains presentation materials, demonstrations, example code, and supporting resources covering:
+- Data analysis and visualization
+- Geospatial and mapping applications
+- Interoperability with Python
+- Deployment of scientific applications
+- Recent MATLAB and Mapping Toolbox capabilities
+- AI-assisted and agentic workflows for engineering and scientific computing
 
-- MATLAB workflows for scientific computing and data analysis
-- Geospatial data visualization and Mapping Toolbox capabilities
-- Working with scientific file formats (NetCDF, HDF5, GRIB, GeoTIFF, shapefiles, and more)
-- MATLAB and Python interoperability
-- Deployment of MATLAB applications and services
-- Agentic AI workflows using MATLAB and Simulink
+## Topics Covered
 
-The goal is to provide practical examples that researchers can adapt to their own projects and research workflows.
+### Scientific Data Workflows
+- Importing and working with scientific data formats
+- Tables, timetables, and Live Editor workflows
+- Reproducible analysis and reporting
 
-## Repository Contents
+### Geospatial Analysis and Mapping
+- Reading raster and vector geospatial data
+- GeoTIFF, shapefiles, Geo
 
-| Folder | Description |
-|----------|-------------|
-| `presentations/` | Seminar slides and presentation materials |
-| `examples/` | MATLAB scripts and live scripts demonstrated during the session |
-| `mapping/` | Geospatial and Mapping Toolbox examples |
-| `python/` | MATLAB-Python integration examples |
+### Generative and Agentic AI
+- MATLAB and Simulink Copilot
+- Getting started with the MATLAB Agentic Toolkit
