@@ -1,0 +1,61 @@
+# If using Anaconda, Install a conda package in the current Jupyter kernel
+import sys
+!conda install --yes --prefix {sys.prefix} scikit-learn
+
+ 
+
+# Setup
+import matlab.engine
+m = matlab.engine.start_matlab()
+
+ 
+
+# Access Data
+from sklearn.datasets import load_boston
+boston = load_boston()
+print(boston.data.shape)
+
+ 
+
+boston.feature_names
+
+ 
+
+#Preprocess Data
+X_ml = matlab.double(boston.data.tolist())
+y_ml = matlab.double(boston.target.tolist())
+
+ 
+
+# AI modeling (Training using MATLAB Regression Learner)
+m.regressionLearner(X_ml, y_ml, nargout = 0)
+
+ 
+
+# AI modeling (Testing)
+model = m.workspace['trainedModel']
+model
+
+ 
+
+predFcn = model.get('predictFcn')
+
+ 
+
+X_test = X_ml[0]
+X_test
+
+ 
+
+y_test = m.feval(predFcn, X_test)
+y_test
+
+ 
+
+model1 = m.workspace['trainedModel1']
+model1
+
+ 
+
+predFcn1 = model1.get('predictFcn')
+m.feval(predFcn1, X_test)
